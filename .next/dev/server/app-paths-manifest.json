@@ -1,0 +1,6 @@
+{
+  "/dynamic/page": "app/dynamic/page.js",
+  "/hybrid/page": "app/hybrid/page.js",
+  "/page": "app/page.js",
+  "/static/page": "app/static/page.js"
+}

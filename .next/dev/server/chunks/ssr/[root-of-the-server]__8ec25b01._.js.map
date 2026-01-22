@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Acer/New%20folder%20%285%29/-Concept-1-Advanced-Data-Fetching-Static-Dynamic-and-Hybrid-Rendering-in-the-App-Router/app/hybrid/page.tsx"],"sourcesContent":["export const revalidate = 60;\r\n\r\ninterface Comment {\r\n  id: number;\r\n  name: string;\r\n  email: string;\r\n  body: string;\r\n  postId: number;\r\n}\r\n\r\nexport default async function HybridPage() {\r\n  const res = await fetch('https://jsonplaceholder.typicode.com/comments/1');\r\n  const comment: Comment = await res.json();\r\n\r\n  return (\r\n    <div>\r\n      <h1>Hybrid Page - News</h1>\r\n      <p>{comment.name}</p>\r\n      <p>This page uses Incremental Static Regeneration, revalidating every 60 seconds.</p>\r\n    </div>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;;;;AAAO,MAAM,aAAa;AAUX,eAAe;IAC5B,MAAM,MAAM,MAAM,MAAM;IACxB,MAAM,UAAmB,MAAM,IAAI,IAAI;IAEvC,qBACE,8OAAC;;0BACC,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;0BAAG,QAAQ,IAAI;;;;;;0BAChB,8OAAC;0BAAE;;;;;;;;;;;;AAGT"}}]
+}
